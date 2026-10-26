@@ -23,6 +23,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.layout.statusBarsPadding
 
 
 //Demo 1 - Aileen
@@ -87,7 +88,7 @@ fun PreviewMessageCard() {
 @Composable
 fun MessageCard(msg: Message) {
     // Add padding around our message
-    Row(modifier = Modifier.padding(all = 8.dp)) {
+    Row(modifier = Modifier.statusBarsPadding().padding(all = 8.dp)) {
         Image(
             painter = painterResource(R.drawable.profile_picture),
             contentDescription = "Contact profile picture",
