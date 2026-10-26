@@ -16,32 +16,19 @@ import com.example.techtalkdemo.ui.theme.TechTalkDemoTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            TechTalkDemoTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+            MessageCard("COMP 523")
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun MessageCard(name: String) {
+    Text(text = "Hello $name!")
 }
 
-@Preview(showBackground = true)
+@Preview() // Lets you preview composable functions without having to build
 @Composable
 fun GreetingPreview() {
-    TechTalkDemoTheme {
-        Greeting("Android")
-    }
+        MessageCard("Android")
 }
