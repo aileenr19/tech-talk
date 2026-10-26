@@ -93,8 +93,8 @@ fun MessageCard(msg: Message) {
             painter = painterResource(R.drawable.profile_picture),
             contentDescription = "Contact profile picture",
             modifier = Modifier
-                // Set image size to 40 dp
-                .size(60.dp)
+                // Set image size to 50 dp
+                .size(50.dp)
                 // Clip image to be shaped as a circle
                 .clip(CircleShape)
         )
