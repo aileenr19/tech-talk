@@ -29,6 +29,6 @@ fun MessageCard(name: String) {
 
 @Preview() // Lets you preview composable functions without having to build
 @Composable
-fun GreetingPreview() {
-        MessageCard("Android")
+fun PreviewMessageCard() {
+        MessageCard("COMP 523")
 }
