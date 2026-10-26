@@ -77,7 +77,7 @@ data class Message(val author: String, val body: String)
 @Composable
 fun PreviewMessageCard() {
     MessageCard(
-        msg = Message("Lexi", "Hey, take a look at Jetpack Compose, it's great!")
+        msg = Message("Sammy", "I just lost my entire paycheck to my parlay after the Chiefs lost. Could you spot me 20 bucks for tonight?")
     )
 }
 
@@ -94,7 +94,7 @@ fun MessageCard(msg: Message) {
             contentDescription = "Contact profile picture",
             modifier = Modifier
                 // Set image size to 40 dp
-                .size(40.dp)
+                .size(60.dp)
                 // Clip image to be shaped as a circle
                 .clip(CircleShape)
         )
